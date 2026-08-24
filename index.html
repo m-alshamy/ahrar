@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar" class="">
+
+<head>
+  <title>أحرار من الادمان</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="./dist/output.css" as="style">
+  <link href="./dist/output.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="css/all.min.css">
+  </noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet"
+    media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
+  </noscript>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="js/interface.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/3.0.0/typed.umd.min.js"></script>
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="description"
+    content="في مجتمعنا التابع لمشروع أحرار ستخوض رحلة فريدة لتفهم كل أنواع الادمان و تبدأ حياتك الجديدة حرا من أي ادمان">
+  <!-- <link rel="canonical" href=""> -->
+  <meta name="theme-color" content="#14b8a6">
+  <meta property="og:title" content="أحرار من الادمان">
+  <meta property="og:description"
+    content="في مجتمعنا التابع لمشروع أحرار ستخوض رحلة فريدة لتفهم كل أنواع الادمان و تبدأ حياتك الجديدة حرا من أي ادمان">
+  <meta property="og:locale" content="ar_AR">
+  <!-- <meta property="og:image" content=""> -->
+  <!-- <meta property="og:url" content=""> -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="أحرار">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "أحرار",
+      "alternateName": "ahrar",
+      "url": ""
+    }
+    </script>
+
+</head>
+
+<body class="font-noto bg-pri-bg text-pri-text scroll-smooth transition-all selection:bg-pri-item/40">
+
+  <header
+    class="fixed w-full flex justify-between px-10 h-14 items-center text-pri-text bg-pri-bg/60 backdrop-blur-sm transition-all z-49 overflow-clip">
+
+    <a href="/" id="logo"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="80"
+        height="80">
+        <path id="أحرار" class="fill-pri-text" aria-label="أحرار"
+          d="m79.1 132.1h0.3q9.6 4.4 9.6 12.1v0.8q0 4-5.5 12.4l-0.5 1.8q0 3.3 3 3.3 2 0 4.4-3h0.7q-2 6.4-5.8 6.4h-1.1q-3.9-0.4-3.9-4.4v-0.4q0-3.5 5.2-11.3 0.5-2 0.5-2.9v-1q0-5.4-9.6-10.8v-0.2q1.4-1.8 2.7-2.8zm18.5 120.4h1.1q2.6 0 3 3.3v1.4q0 6.6-10.6 14.9l-1 0.3v-0.3q8.4-9.1 8.4-11.8v-0.2q0-1.3-1.3-1.9h-1.8q-0.7 0-2.3 1-0.4 0-0.4-0.6 1.1-6.1 4.9-6.1zm-58.9 7.7q0.6-2 2.1-2 4.6-1.9 9.9-3.7 7.7-3.4 23.1-9.9 33.7-16.9 45-24.5 5.7-3 9.5-7.7 2-2.3 1.9-3.6-0.1-2.6-10.6-16.6-5.5-8.1-5.9-10-0.6-0.4-0.6-1.6-0.2-2.8 2.8-9.3l12.9 14.9h-0.4q-0.6 0-3.7-1.6h-0.3v0.2l4.6 6.1q4.5 7.1 4.8 10.4 0.3-0.1 0-1.2l0.4 3.3q0.5 6.6-3.6 15.6-5.1 8.5-11.9 12.1-10.5 7.7-38 21.3-6.2 3.1-12.1 4.8-1.2 0.8-3.8 1.5zm118.4-138.3q0.7 2.2 1.7 5.3 0.4 1.5-0.4 0.9-2-1.3-5.9-5.9h-0.3q-0.4 0-0.4 2.4 0 15.6 5.3 67.2l0.3 9v0.3q0 16.2-6.8 29.2l-1.4 1q-0.5-0.1-0.6-0.6 2.4-9.9 2.4-15.9v-2.5q0-10.2-4.1-48.5-1.3-15.3-3.3-45.5-1.2-6.9-2.9-11.9v-0.1q0.2-3.8 4.1-9.1l1-1zm14.1 159.3h-29q0-0.8 11.1-4.9 8.1-1.8 21-7 14-5.4 36.4-17.6 7.9-4.2 12.9-8.4 2.8-2.4 4.2-4.6-0.3-4.7-8.6-23.5-0.8-1.2-1.3-3.5 1.4-8.3 3-9.6h0.4q0.6 0.3 2.7 5.6 1.4 2.9 5.1 4.4 2.1 0.8 3.3 0.8l2.8 0.5-0.2 11.2-2 0.3-1.4-0.2-0.2 0.4q0.8 5.4 0.8 8.2-1.8 10.2-3.4 12.2-0.6 3.4-5 8.2-7.3 5.9-16.2 10.6-17.1 9.3-32 15.4-2.5 0.8-4.4 1.5zm17-131.3h0.3q9.6 4.4 9.6 12.1v0.8q0 4-5.6 12.4l-0.4 1.8q0 3.3 3 3.3 2 0 4.4-3h0.6q-1.9 6.5-5.7 6.5h-1.1q-3.9-0.4-3.9-4.4v-0.4q0-3.6 5.2-11.4 0.5-1.9 0.5-2.9v-0.9q0-5.5-9.7-10.9v-0.2q1.5-1.8 2.8-2.8zm21.4 120.9h1q2.7 0 3.1 3.2v1.5q0 6.6-10.6 14.9l-1 0.2v-0.2q8.4-9.1 8.4-11.9v-0.1q0-1.3-1.3-1.9h-1.8q-0.8 0-2.3 1-0.4 0-0.4-0.6 1.1-6.1 4.9-6.1zm111.7-82.7q0.5 0.1-1.1 5.5-1.6 5.4-2.5 5.4-6.1-0.4-25.9 9.5-23 11.4-39 14.7 0.3 3.1-1.3 6.3-0.5 1.3-1.1 1.3-1.4 0-1-2.8 0-1.9-0.7-4.2-7.1 1.2-14.6 1.2v-11.9q4.4 0 10.5-0.6-5.1-11.7-5.1-15.2 0.1-8.7 5.6-15.3 5.6-6.6 14.1-7 4.9-0.2 26.1 5.5 23.7 6.3 36 7.6zm-24.3 7.7q-4.6-0.6-18.7-5-12.3-3.9-21.1-3.9-2.6 0-5.1 0.3-2.5 0.2-5.4 3.3-3 2.9-3 5.3 0 0.4 0.2 0.8 2.5 4.5 6.9 14.9 22.5-3.8 46.2-15.7zm-14.3-58.2h0.3q-3.2 10-3.2 12.8 0 4.2 2.1 4.2 1.6 0 3.3-3.7h0.2l0.2 0.3q-1.4 7.9-4.1 7.9h-0.7q-2 0-2.9-2.7-0.1-1.2-0.1-1.8v-2.2q0-6.5 4.9-14.8zm-4.8 97.6q7 0 7 3.6 0 3.5-10.8 13.9-1.7 1.8-1.7 3.4v0.2q0 2.6 4.9 2.6h1.2q0.2 0 0.2 0.2l0.4-0.2h1.4q4.6 0 13.5-2.4l0.2 0.4q-7.2 6.8-15.9 6.8h-2.7q-5.6-1.2-5.6-4.8v-1.7q0-4.9 7.9-12.2l3-3.2q-1-1.6-6.4-1.6-1.4 0-4.1 1.1-0.1-0.5-0.1-0.7 2.1-5 4.6-5 0-0.3 3-0.4zm70.6-151q1.6 0.6 1.9 1.3v0.2q0 2.3-1.9 5.8-1.2-1.1-2-1.1h-0.7q-2 0-3.3 1.7v0.3q2.6 2.6 7.7 2.6 1.5 0 5.5-2.9h0.2q-1 6.7-2.8 6.7l-9.9 6.1-2.9 2.7v-0.5q0.2-2.5 2.6-6.8-3.5-1.6-3.5-4.9 2.7-11.2 9.1-11.2zm-3.4 37.7q0.8 2.3 1.8 5.3 0.4 1.6-0.4 0.9-2-1.2-5.9-5.8h-0.3q-0.5 0-0.5 2.3 0 15.7 5.4 67.2l0.3 9v0.3q0 16.2-6.9 29.2l-1.3 1.1q-0.5-0.1-0.7-0.6 2.5-9.9 2.5-16v-2.4q0-10.2-4.2-48.6-1.3-15.2-3.3-45.5-1.2-6.9-2.9-11.8v-0.1q0.3-3.8 4.1-9.2l1.1-0.9z" />
+      </svg>
+    </a>
+
+    <nav id="topNav" class="justify-between w-full px-40 items-center hidden lg:flex font-medium transition-all">
+      <a href="">الرئيسية</a>
+      <a href="">الرئيسية</a>
+      <a href="">الرئيسية</a>
+      <a href="">الرئيسية</a>
+    </nav>
+
+    <button onclick="toggleMode()"
+      class="modeBtn hidden p-1 w-12 lg:flex rounded-full bg-sec-bg items-center hover:brightness-90 hover:cursor-pointer active:scale-95 select-none transition-transform">
+      <i class="far fa-sun fa-sm text-pri-bg py-2 in-[.dark]:hidden!"></i>
+      <i class="fas fa-moon fa-sm text-pri-bg py-2 hidden! in-[.dark]:block!"></i>
+    </button>
+
+    <button id="menuBtn" onclick="toggle_menu()"
+      class="lg:hidden rounded-lg px-0.5 py-2 hover:cursor-pointer active:scale-90 select-none group">
+      <i class="fas fa-bars fa-xl text-sec-bg group-hover:text-sec-item group-active:text-sec-item"></i>
+    </button>
+
+  </header>
+
+  <!-- aside menu -->
+
+  <aside id="sideNav"
+    class="fixed left-0 h-[calc(100dvh-3.5rem)] w-[75%] sm:w-[50%] -translate-x-full bottom-0 items-center lg:hidden flex flex-col justify-evenly py-20 font-medium z-50 text-pri-text bg-pri-bg/60 backdrop-blur-sm transition-all">
+    <a href="">الرئيسية</a>
+    <a href="">الرئيسية</a>
+    <a href="">الرئيسية</a>
+    <a href="">الرئيسية</a>
+
+    <button onclick="toggleMode()"
+      class="modeBtn p-1 w-12 flex rounded-full bg-sec-bg items-center hover:brightness-90 hover:cursor-pointer active:scale-95 select-none transition-transform">
+      <i class="far fa-sun fa-sm text-pri-bg py-2 in-[.dark]:hidden!"></i>
+      <i class="fas fa-moon fa-sm text-pri-bg py-2 hidden! in-[.dark]:block!"></i>
+    </button>
+
+  </aside>
+
+  <div id="sideBlack" class="hidden w-full h-full fixed z-48 bg-sec-bg/20 backdrop-blur-sm lg:hidden transition-all">
+  </div>
+
+  <!-- Content Begin -->
+
+  <!-- landing -->
+  <div id="landing_sec"
+    class="relative flex justify-center px-30 pb-10 bg-[url('/img/bg2.webp')] min-h-[50dvh] lg:h-[99dvh] bg-cover bg-center bg-blend-multiply bg-pri-bg/5 transition-all overflow-clip">
+    <div class="flex justify-center">
+
+      <!-- center effect -->
+
+      <div class="bg-pri-bg/30 blur-3xl w-full h-140 rounded-full absolute self-center transition-all">
+      </div>
+
+      <!-- landing content -->
+
+      <div class="w-[95%] lg:w-[68%] flex flex-col justify-between pt-50 z-10">
+        <div class="w-full">
+          <h1 data-aos="zoom-out"
+            class="text-center text-pri-text font-black text-nowrap text-[clamp(2.5rem,7vw,3.5rem)] text-shadow-sm text-shadow-pri-bg">
+            أحرار من الادمان
+          </h1>
+          <h1 data-aos="fade-up" class="text-center text-sec-text text-xl py-15 px-2 leading-8">
+            في مجتمعنا التابع لمشروع أحرار ستخوض رحلة فريدة لتفهم كل أنواع الادمان و تبدأ حياتك الجديدة حرا من أي ادمان
+          </h1>
+        </div>
+        <div class="w-full flex justify-center items-center py-15">
+          <button data-aos="fade-up" data-aos-duration="1400"
+            class="py-3 px-6 bg-linear-to-tr bg-pri-item to-sec-item rounded-full text-xl w-100 font-semibold shadow-pri-item/50 text-pri-text transition-all hover:cursor-pointer hover:shadow-lg active:shadow-lg active:scale-95 select-none group">هيا
+            نبدأ الرحلة
+            <i class="fas fa-long-arrow-alt-left fa-md text-pri-text px-4 transition-all group-hover:animate-ping"></i>
+          </button>
+          <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-0">
+            <svg class="relative block w-[250%] lg:w-[200%] h-15 lg:h-10" viewBox="0 0 1200 120"
+              preserveAspectRatio="none">
+              <path d="M0,60 Q150,120 300,60 T600,60 T900,60 T1200,60 L1200,120 L0,120 Z"
+                class="fill-pri-bg transition-all"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- quote section -->
+
+  <section id="quote_sec"
+    class="relative flex w-full items-center justify-center border-b-4 border-b-thr-bg lg:min-h-dvh md:min-h-[50dvh] min-h-[70dvh] px-6 lg:px-40 py-8 overflow-clip">
+
+    <figure class="relative flex w-full max-w-4xl flex-col items-center gap-6">
+
+      <blockquote class="relative w-full p-8 text-center">
+        <i class="fas fa-quote-right absolute -top-2 right-0 text-4xl text-sec-text/60 transition-all"></i>
+
+        <h1 id="quote" data-aos="zoom-in"
+          class="text-pri-text text-[clamp(1.5rem,6vw,3.5rem)] text-shadow-md text-shadow-pri-bg leading-relaxed bg-thr-bg/80 p-3 rounded-xl inline-block">
+          كل تغيير يبدأ من تغيير
+        </h1>
+
+        <i class="fas fa-quote-left absolute -bottom-2 left-0 text-4xl text-sec-text/60 transition-all"></i>
+      </blockquote>
+
+      <figcaption class="w-full text-end text-pri-text/80 text-[clamp(1rem,3vw,1.5rem)] font-medium px-4 py-4">
+        — من كتاب" سر العصر "
+      </figcaption>
+
+    </figure>
+
+  </section>
+
+  <!-- staticts section -->
+
+  <section id="staticts_sec"
+    class="relative flex flex-col w-full items-center border-b-4 border-b-thr-bg lg:min-h-dvh md:min-h-[50dvh] min-h-[70dvh] px-8 py-24 gap-8 overflow-clip">
+
+    <h1 data-aos="zoom-out" class="text-center self-center text-nowrap text-[clamp(2rem,5vw,3rem)] pb-8 mb-18">
+      <div class="absolute bottom-0 left-0 w-full h-1 bg-linear-to-r from-transparent via-sec-item to-transparent">
+      </div>
+      احصائيات
+    </h1>
+    <div class="w-full h-full grid grid-cols-1 lg:grid-cols-3 items-center justify-items-center gap-20 flex-1">
+
+      <!-- cards -->
+
+      <div data-aos="flip-up"
+        class="w-80 aspect-square bg-pri-item/30 rounded-full flex flex-col justify-center items-center shadow-thr-bg shadow-lg overflow-clip hover:cursor-default hover:shadow-2xl hover:scale-105 active:shadow-2xl active:scale-105 transition-all group">
+
+        <i class="fas fa-users text-7xl text-sec-item"></i>
+
+        <h2
+          class="text-center text-sec-item self-center text-nowrap text-[clamp(6rem,8vw,3.5rem)] transition-transform select-none">
+          0</h2>
+
+        <div class="bg-pri-bg w-full p-1 text-center text-[clamp(1.5rem,4vw,2rem)]">
+          الأعضاء
+        </div>
+      </div>
+
+
+      <div data-aos="flip-up"
+        class="w-80 aspect-square  bg-pri-item/30 rounded-full flex flex-col justify-center items-center shadow-thr-bg shadow-lg overflow-clip hover:cursor-default hover:shadow-2xl hover:scale-105 active:shadow-2xl active:scale-105 transition-all group">
+
+        <i class="fas fa-book-open text-7xl text-sec-item"></i>
+
+        <h2 class="text-center text-sec-item self-center text-nowrap text-[clamp(6rem,8vw,3.5rem)] select-none">0</h2>
+
+        <div class="bg-pri-bg w-full p-1 text-center text-[clamp(1.5rem,4vw,2rem)] rounded-2xl">
+          المصادر
+        </div>
+      </div>
+
+      <div data-aos="flip-up"
+        class="w-80 aspect-square bg-pri-item/30 rounded-full flex flex-col justify-center items-center shadow-thr-bg shadow-lg overflow-clip hover:cursor-default hover:shadow-2xl hover:scale-105 active:shadow-2xl active:scale-105 transition-all group">
+
+        <i class="fas fa-chart-bar text-7xl text-sec-item"></i>
+
+        <h2 class="text-center text-sec-item self-center text-nowrap text-[clamp(6rem,8vw,3.5rem)] select-none">0</h2>
+
+        <div class="bg-pri-bg w-full p-1 text-center text-[clamp(1.5rem,4vw,2rem)] rounded-full">
+          استطلاعات
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- vision section -->
+
+  <section id="vision_sec"
+    class="relative flex flex-col w-full items-center justify-start border-b-4 border-b-thr-bg lg:min-h-dvh md:min-h-[50dvh] min-h-[70dvh] px-6 lg:px-40 py-24 overflow-clip">
+
+    <i
+      class="fas fa-seedling absolute text-pri-item/30 self-center -z-10 text-[400px] lg:text-[500px] py-70 lg:py-60"></i>
+
+    <h1 data-aos="zoom-out" class="text-center text-nowrap text-[clamp(2rem,5vw,3rem)] pb-8 mb-18">
+      <div class="absolute bottom-0 left-0 w-full h-1 bg-linear-to-r from-transparent via-sec-item to-transparent">
+      </div>
+      رؤية المجتمع
+    </h1>
+
+    <div class="w-full p-4 flex-1 flex flex-col gap-24 text-wrap text-start text-[clamp(1.1rem,3vw,1.3rem)] py-16">
+
+      <div>
+        <h1 data-aos="zoom-out" class="text-start text-nowrap text-[clamp(1rem,5vw,2rem)] py-8">
+          الرؤية
+        </h1>
+        <span data-aos="fade">الوصول إلى مجتمع واعٍ متحرر من قيود الإدمان، يقوده جيل من صناع التغيير الذين يمتلكون زمام أنفسهم
+          وعقولهم.</span>
+      </div>
+
+      <div>
+        <h1 data-aos="zoom-out" class="text-start text-nowrap text-[clamp(1rem,5vw,2rem)] py-8">
+          الرسالة
+        </h1>
+        <span data-aos="fade">التكاتف داخل مجتمع "أحرار" لتمكين الشباب من التغلب على أمراض العصر، وتأهيلهم لمساعدة غيرهم في رحلة
+          التعافي،
+          مع التركيز على تكامل أدوار الرجال والنساء في تنشئة جيل من القادة الأقوياء.</span>
+      </div>
+
+
+    </div>
+
+  </section>
+
+  <!-- items section
+
+  <section
+    class="relative flex w-full items-center justify-center border-b-4 border-b-thr-bg lg:h-dvh md:h-[50dvh] h-[70dvh] px-6 lg:px-40">
+    <div class="matrix w-full grid grid-cols-3 justify-items-center py-40 px-10 gap-10">
+      <div class=""></div>
+      <div class=""></div>
+      <div class=""></div>
+      <div class=""></div>
+      <div class=""></div>
+      <div class=""></div>
+    </div>
+  </section> -->
+
+  <!-- footer section -->
+
+  <footer class="h-auto bg-thr-bg w-full flex-col flex justify-between sm:flex-row py-8 sm:px-8">
+
+    <!-- footer logo -->
+    <div class="w-auto h-auto flex flex-col items-center text-center py-8 gap-6">
+      <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="160" height="160">
+        <path id="أحرار" class="fill-pri-text" aria-label="أحرار"
+          d="m79.1 132.1h0.3q9.6 4.4 9.6 12.1v0.8q0 4-5.5 12.4l-0.5 1.8q0 3.3 3 3.3 2 0 4.4-3h0.7q-2 6.4-5.8 6.4h-1.1q-3.9-0.4-3.9-4.4v-0.4q0-3.5 5.2-11.3 0.5-2 0.5-2.9v-1q0-5.4-9.6-10.8v-0.2q1.4-1.8 2.7-2.8zm18.5 120.4h1.1q2.6 0 3 3.3v1.4q0 6.6-10.6 14.9l-1 0.3v-0.3q8.4-9.1 8.4-11.8v-0.2q0-1.3-1.3-1.9h-1.8q-0.7 0-2.3 1-0.4 0-0.4-0.6 1.1-6.1 4.9-6.1zm-58.9 7.7q0.6-2 2.1-2 4.6-1.9 9.9-3.7 7.7-3.4 23.1-9.9 33.7-16.9 45-24.5 5.7-3 9.5-7.7 2-2.3 1.9-3.6-0.1-2.6-10.6-16.6-5.5-8.1-5.9-10-0.6-0.4-0.6-1.6-0.2-2.8 2.8-9.3l12.9 14.9h-0.4q-0.6 0-3.7-1.6h-0.3v0.2l4.6 6.1q4.5 7.1 4.8 10.4 0.3-0.1 0-1.2l0.4 3.3q0.5 6.6-3.6 15.6-5.1 8.5-11.9 12.1-10.5 7.7-38 21.3-6.2 3.1-12.1 4.8-1.2 0.8-3.8 1.5zm118.4-138.3q0.7 2.2 1.7 5.3 0.4 1.5-0.4 0.9-2-1.3-5.9-5.9h-0.3q-0.4 0-0.4 2.4 0 15.6 5.3 67.2l0.3 9v0.3q0 16.2-6.8 29.2l-1.4 1q-0.5-0.1-0.6-0.6 2.4-9.9 2.4-15.9v-2.5q0-10.2-4.1-48.5-1.3-15.3-3.3-45.5-1.2-6.9-2.9-11.9v-0.1q0.2-3.8 4.1-9.1l1-1zm14.1 159.3h-29q0-0.8 11.1-4.9 8.1-1.8 21-7 14-5.4 36.4-17.6 7.9-4.2 12.9-8.4 2.8-2.4 4.2-4.6-0.3-4.7-8.6-23.5-0.8-1.2-1.3-3.5 1.4-8.3 3-9.6h0.4q0.6 0.3 2.7 5.6 1.4 2.9 5.1 4.4 2.1 0.8 3.3 0.8l2.8 0.5-0.2 11.2-2 0.3-1.4-0.2-0.2 0.4q0.8 5.4 0.8 8.2-1.8 10.2-3.4 12.2-0.6 3.4-5 8.2-7.3 5.9-16.2 10.6-17.1 9.3-32 15.4-2.5 0.8-4.4 1.5zm17-131.3h0.3q9.6 4.4 9.6 12.1v0.8q0 4-5.6 12.4l-0.4 1.8q0 3.3 3 3.3 2 0 4.4-3h0.6q-1.9 6.5-5.7 6.5h-1.1q-3.9-0.4-3.9-4.4v-0.4q0-3.6 5.2-11.4 0.5-1.9 0.5-2.9v-0.9q0-5.5-9.7-10.9v-0.2q1.5-1.8 2.8-2.8zm21.4 120.9h1q2.7 0 3.1 3.2v1.5q0 6.6-10.6 14.9l-1 0.2v-0.2q8.4-9.1 8.4-11.9v-0.1q0-1.3-1.3-1.9h-1.8q-0.8 0-2.3 1-0.4 0-0.4-0.6 1.1-6.1 4.9-6.1zm111.7-82.7q0.5 0.1-1.1 5.5-1.6 5.4-2.5 5.4-6.1-0.4-25.9 9.5-23 11.4-39 14.7 0.3 3.1-1.3 6.3-0.5 1.3-1.1 1.3-1.4 0-1-2.8 0-1.9-0.7-4.2-7.1 1.2-14.6 1.2v-11.9q4.4 0 10.5-0.6-5.1-11.7-5.1-15.2 0.1-8.7 5.6-15.3 5.6-6.6 14.1-7 4.9-0.2 26.1 5.5 23.7 6.3 36 7.6zm-24.3 7.7q-4.6-0.6-18.7-5-12.3-3.9-21.1-3.9-2.6 0-5.1 0.3-2.5 0.2-5.4 3.3-3 2.9-3 5.3 0 0.4 0.2 0.8 2.5 4.5 6.9 14.9 22.5-3.8 46.2-15.7zm-14.3-58.2h0.3q-3.2 10-3.2 12.8 0 4.2 2.1 4.2 1.6 0 3.3-3.7h0.2l0.2 0.3q-1.4 7.9-4.1 7.9h-0.7q-2 0-2.9-2.7-0.1-1.2-0.1-1.8v-2.2q0-6.5 4.9-14.8zm-4.8 97.6q7 0 7 3.6 0 3.5-10.8 13.9-1.7 1.8-1.7 3.4v0.2q0 2.6 4.9 2.6h1.2q0.2 0 0.2 0.2l0.4-0.2h1.4q4.6 0 13.5-2.4l0.2 0.4q-7.2 6.8-15.9 6.8h-2.7q-5.6-1.2-5.6-4.8v-1.7q0-4.9 7.9-12.2l3-3.2q-1-1.6-6.4-1.6-1.4 0-4.1 1.1-0.1-0.5-0.1-0.7 2.1-5 4.6-5 0-0.3 3-0.4zm70.6-151q1.6 0.6 1.9 1.3v0.2q0 2.3-1.9 5.8-1.2-1.1-2-1.1h-0.7q-2 0-3.3 1.7v0.3q2.6 2.6 7.7 2.6 1.5 0 5.5-2.9h0.2q-1 6.7-2.8 6.7l-9.9 6.1-2.9 2.7v-0.5q0.2-2.5 2.6-6.8-3.5-1.6-3.5-4.9 2.7-11.2 9.1-11.2zm-3.4 37.7q0.8 2.3 1.8 5.3 0.4 1.6-0.4 0.9-2-1.2-5.9-5.8h-0.3q-0.5 0-0.5 2.3 0 15.7 5.4 67.2l0.3 9v0.3q0 16.2-6.9 29.2l-1.3 1.1q-0.5-0.1-0.7-0.6 2.5-9.9 2.5-16v-2.4q0-10.2-4.2-48.6-1.3-15.2-3.3-45.5-1.2-6.9-2.9-11.8v-0.1q0.3-3.8 4.1-9.2l1.1-0.9z" />
+      </svg>
+
+      <span class="text-sec-text font-light sm:w-55">هنا وصف للموقع في قسم التذييل</span>
+      <span class="text-sec-text text-sm select-none">copy right @ جميع الحقوق محفوظة</span>
+    </div>
+
+    <!-- links -->
+    <div
+      class="w-full h-auto grid grid-cols-2 sm:justify-items-end md:grid-cols-3 justify-evenly text-sec-text text-sm text-center py-24 place-items-center gap-y-6 font-light">
+
+      <div class="w-auto h-full flex-col flex lg:gap-4 gap-6">
+        <h1 class="text-pri-text font-normal text-lg pb-6">الروابط</h1>
+        <a href="/" class="flex gap-2 hover:text-sec-item  transition-colors">الرئيسية</a>
+        <a href="/" class="flex gap-2 hover:text-sec-item  transition-colors">الرئيسية</a>
+        <a href="/" class="flex gap-2 hover:text-sec-item  transition-colors">الرئيسية</a>
+      </div>
+
+      <div class="w-auto h-full flex-col flex lg:gap-4 gap-6">
+        <h1 class="text-pri-text font-normal text-lg pb-6">الروابط</h1>
+        <a href="/" class="flex gap-2 hover:text-sec-item  transition-colors"><i
+            class="fab fa-facebook-square text-blue-500 text-lg"></i>فيسبوك</a>
+        <a href="/" class="flex gap-2 hover:text-sec-item  transition-colors"><i
+            class="fab fa-youtube text-red-500 text-lg"></i>يوتيوب</a>
+        <a href="/" class="flex gap-2 hover:text-sec-item  transition-colors"><i
+            class="fab fa-whatsapp text-green-500 text-lg"></i>واتساب</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
